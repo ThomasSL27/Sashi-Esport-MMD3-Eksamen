@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --mainRed: #7c2d2e;
+}
+h1{
+  font-weight: lighter;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+h2{
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 2rem;
+  color: white;
+}
+h3{
+  color: white;
+  font-size: 1rem;
+}
+span{
+  color: red;
+}
+h4{
+  color: white;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+p{
+  color: white;
+  font-size: 1rem;
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  padding: 0;   
+}
+
+.hr{
+  border: none; 
+  height: 2px; 
+  background: linear-gradient(to right, transparent, #ff0000, transparent);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+main {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  background: linear-gradient(
+    to bottom right,
+    black,
+    #18181b,
+    black
+  );
+}
+
+.win{
+  color: green;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.loss{
+  color: red;
+  font-size: 2rem;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(139, 0, 0, 0.3) 2px,
+    rgba(139, 0, 0, 0.3) 4px
+  );
+
+  pointer-events: none; 
+}
+
