@@ -32,7 +32,6 @@ watch(isOpen, (open) => {
     >
       <NuxtLink to="/" @click="isOpen = false">Home</NuxtLink>
       <NuxtLink to="/team" @click="isOpen = false">Team</NuxtLink>
-      <NuxtLink to="/results" @click="isOpen = false">Results</NuxtLink>
       <NuxtLink to="/sashiproleague" @click="isOpen = false">Sashi Pro League</NuxtLink>
       <NuxtLink to="/about" @click="isOpen = false">About</NuxtLink>
       <NuxtLink to="/contact" @click="isOpen = false">Contact us</NuxtLink>
@@ -41,7 +40,6 @@ watch(isOpen, (open) => {
     <!-- DESKTOP LINKS -->
     <div class="navLinks">
       <NuxtLink to="/team">Team</NuxtLink>
-      <NuxtLink to="/results">Results</NuxtLink>
       <NuxtLink to="/sashiproleague">Sashi Pro League</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
       <NuxtLink to="/contact">Contact us</NuxtLink>
