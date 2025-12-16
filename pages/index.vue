@@ -38,6 +38,16 @@ useHead({
       </div>
     </section>
     <hr class="hr">
+    <section class="youtube">
+      <div class="sashiYT">
+        <h2>Sashi <span>Youtube</span></h2>
+      </div>
+      <div class="video">
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/LChNu342EUQ?si=Ek5ArL24JoMiR40E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur deserunt dolore vero at asperiores hic eligendi incidunt corrupti odit dolor quidem maiores quia culpa quod ipsam libero beatae ex eaque nostrum error rerum atque, ipsum nulla illum. Architecto dolores quos laudantium distinctio, animi nulla voluptates quam excepturi ab deleniti non sit id dolorem! Tenetur, reprehenderit amet? Nobis deleniti animi omnis reiciendis, repellat molestiae iste doloremque! Veniam illum tenetur sequi mollitia laboriosam velit odit? Nisi, veniam consectetur autem eos quam asperiores doloremque. Et ipsum assumenda velit voluptatibus quas neque est ratione?</p>
+      </div>
+    </section>
+    <hr class="hr">
     <section class="results">
       <h2>Recent <span>Results</span></h2>
       <gameResult />
@@ -50,6 +60,20 @@ useHead({
 </template>
 
 <style scoped>
+  .youtube{
+      padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
+.sashiYT{
+  display: flex;
+  justify-content: center;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 .coach{
   display: flex;
   align-items: center;
