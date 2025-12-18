@@ -43,7 +43,7 @@ const { data} = await useAsyncData('players', () => $fetch(url));
     width: 100%;
     margin: 0 auto;
   }
-  cursor: pointer;
+  cursor: url(/assets/img/Vector\ \(3\).svg), auto;
 }
 
 .player-card:hover {
