@@ -14,11 +14,21 @@ useHead({
       <article data-aos="fade-up">
         <div class="smoke"></div>
         <img src="@/assets/img/SashiProLeague.png" alt="Sashi Esport League Logo" id="sashiLogo" data-aos="zoom-in">
-        <h1>SASHI <span>Pro League</span></h1>
+        <h1>SASHI <span>PRO LEAGUE</span></h1>
         <h2>Professional Counter-Strike 2 League</h2>
-  
       </article>
+      <hr class="hr">
     </section>
+    <section data-aos="fade-up" data-aos-duration="1000" class="leagueIntro">
+      <div>
+        <h2>About the <span>League</span></h2>
+        <p>The Sashi Pro League is a premier Counter-Strike 2 competition featuring top-tier teams from around the globe. Established to foster competitive play and showcase elite talent, the league offers thrilling matches, strategic gameplay, and a platform for players to demonstrate their skills on an international stage. With a commitment to excellence and sportsmanship, the Sashi Pro League aims to elevate the esports community and provide fans with unforgettable gaming experiences.</p>
+      </div>
+      <div>
+        <img src="../assets/img/SashiRetakeWin.jpg" alt="">
+      </div>
+    </section>
+    
     <TheFooter />
 </main>
 </template>
@@ -96,5 +106,26 @@ main::before {
     transform: translate(-50%, -50%) scale(1.3);
     opacity: 0.8;
   }
+}
+img{
+  width: 50rem;
+  margin-top: 2rem;
+}
+.leagueIntro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.leagueIntro p{
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.leagueIntro div{
+  margin: 1rem;
+  padding: 1rem;
 }
 </style>
