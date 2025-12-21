@@ -28,7 +28,15 @@ useHead({
         <img src="../assets/img/SashiRetakeWin.jpg" alt="">
       </div>
     </section>
-    
+    <section class="highlights">
+      <hr class="hr">
+      <article data-aos="fade-up">
+        <h1>Highlights</h1>
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </article>
+    </section>
+    <Leaderboard />
     <TheFooter />
 </main>
 </template>
@@ -127,5 +135,24 @@ img{
 .leagueIntro div{
   margin: 1rem;
   padding: 1rem;
+}
+iframe{
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+.highlights{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+.highlights .hr{
+  margin-bottom: 2rem;
+}
+p{
+  margin: 1rem;
+  font-size: 1.2rem;
+  
 }
 </style>
