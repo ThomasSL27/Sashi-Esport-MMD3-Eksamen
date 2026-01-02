@@ -9,7 +9,7 @@
 <section class="hero">
     <img src="/assets/img/SashiRetakeWin.jpg" alt="">
 </section>
-<section class="team" data-aos="fade-up">
+<section class="team">
     <h1>SASHI <span>ESPORT</span> Team</h1>
     <div class="cards">
         <playerCard />
@@ -21,7 +21,7 @@
 <style scoped>
 .hero img{
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
     object-fit: cover;
      -webkit-mask-image: linear-gradient(
     to bottom,
