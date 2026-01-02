@@ -10,6 +10,7 @@ useHead({
 <template>
 <main>
     <TheNav />
+    <gameSlider />
 </main>
 </template>
 

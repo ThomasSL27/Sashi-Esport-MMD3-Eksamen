@@ -10,6 +10,7 @@ useHead({
 <template>
   <main>
     <TheNav />
+    <gameSlider />
     <section>
       <article class="aboutSashi" data-aos="fade-right">
         <h1>About SASHI <span>ESPORT</span></h1>

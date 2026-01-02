@@ -5,7 +5,11 @@
 <template>
 <main>
 <TheNav />
-<section data-aos="fade-up">
+<gameSlider />
+<section class="hero">
+    <img src="/assets/img/SashiRetakeWin.jpg" alt="">
+</section>
+<section class="team" data-aos="fade-up">
     <h1>SASHI <span>ESPORT</span> Team</h1>
     <div class="cards">
         <playerCard />
@@ -15,13 +19,33 @@
 </template>
 
 <style scoped>
+.hero img{
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+     -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 70%,
+    rgba(0,0,0,0) 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0,0,0,1) 70%,
+    rgba(0,0,0,0) 100%
+  );
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(5, minmax(250px, 1fr));
   gap: .5rem;
   justify-items: center;
+  align-items: center;
 }
-section{
+.team h1 {
+  text-align: center;
+}
+
+.team{
     margin: 2rem;
 }
 </style>

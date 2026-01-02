@@ -26,6 +26,10 @@ useHead({
       </article>
     </section>
     <hr class="hr">
+    <section class="wins">
+      <WinCounter />
+    </section>
+    <hr class="hr">
     <section class="team" data-aos="fade-up" data-aos-duration="1000">
       <div class="teamIntro" id="teamIntro">
         <h2>Our <span>Roster</span></h2>
@@ -62,8 +66,7 @@ useHead({
 
 <style scoped>
   .youtube{
-      padding-top: 2rem;
-  padding-bottom: 2rem;
+    padding: 2rem;
   }
 .sashiYT{
   display: flex;
@@ -89,8 +92,7 @@ useHead({
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem;
   gap: 1rem;
 }
 .arrowLink {
