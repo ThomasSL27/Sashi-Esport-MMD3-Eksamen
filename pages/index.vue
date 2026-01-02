@@ -11,6 +11,7 @@ useHead({
 <template>
   <main>
     <TheNav />
+    <gameSlider />
     <section>
       <article data-aos="fade-up">
         <div class="smoke"></div>
