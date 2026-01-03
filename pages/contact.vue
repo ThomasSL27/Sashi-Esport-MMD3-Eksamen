@@ -73,7 +73,6 @@ const submitForm = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 
 }
 
@@ -145,8 +144,7 @@ article{
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-bottom: 6rem;
-  padding-top: 2rem;
+
 }
 #sashiLogo{
   width: 15%;
