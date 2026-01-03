@@ -32,14 +32,13 @@ const submitForm = () => {
     <div class="wrapper">
     <!-- White box -->
     <div class="white-box">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero impedit et modi ullam, iusto tempore culpa voluptatem a repellat, id corporis at! Odit eum quo, unde eos, accusamus culpa cum nostrum itaque est nihil ipsa nesciunt qui sed dolores quam facere quaerat maiores laboriosam quos. Eos amet consectetur vel maiores.
-      </p>
+      <h2 id="h2black">Ready to connect with Sashi Esport?</h2>
+  <p> Whether you're reaching out for partnerships, tournament opportunities, or just want to get in touch with the team, drop us a message below. We'll make sure the right people see it.</p>
     </div>
     <!-- Red box -->
     <div class="red-box">
       <h2>Contact Us</h2>
-      <p>Please fill out the form below and we’ll get back to you.</p>
+      <p>Please fill out the form below and we'll get back to you.</p>
     <form @submit.prevent="submitForm">
   <div class="field">
     <label>Your Name</label>
@@ -66,6 +65,9 @@ const submitForm = () => {
 </template>
 
 <style scoped>
+  #h2black{
+    color: black;
+  }
   label{
     margin: 0;
   }
@@ -73,7 +75,7 @@ const submitForm = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 2rem;
 }
 
 

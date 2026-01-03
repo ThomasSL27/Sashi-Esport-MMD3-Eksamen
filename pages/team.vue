@@ -15,13 +15,30 @@
         <playerCard />
     </div>
 </section>
+        <hr class="hr">
         <WinCounter />
         <hr class="hr">
-        <TheFooter /> 
+<section class="voiceComms">
+  <div class="video">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/zRUhOwvVBvo?si=fPhgpOBNWgo2uOpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="videoText">
+    <h2>Inside the server: <span>Team Voice Comms</span></h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi mollitia quos modi, perferendis iure deserunt impedit officia quae porro unde ullam accusantium debitis facilis provident quam! Quod eum corrupti sunt?</p>
+  </div>
+</section>
+<hr class="hr">
+<calendar />
+    <TheFooter /> 
 </main>
 </template>
 
 <style scoped>
+.voiceComms{
+  display: flex;
+  gap: 1rem;
+  padding: 2rem
+}
 .hero img{
     width: 100vw;
     height: 50vh;

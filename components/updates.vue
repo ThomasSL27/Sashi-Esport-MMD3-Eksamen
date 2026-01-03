@@ -5,8 +5,8 @@
   <div class="video-container">
     <!-- Video on the left -->
     <iframe 
-      width="960" 
-      height="540" 
+      width="800" 
+      height="450" 
       src="https://www.youtube.com/embed/LChNu342EUQ?si=Ek5ArL24JoMiR40E" 
       title="YouTube video player" 
       frameborder="0" 

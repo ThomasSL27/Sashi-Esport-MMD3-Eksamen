@@ -49,9 +49,7 @@ useHead({
     <hr class="hr">
     <section class="results">
       <h2>Recent <span>Results</span></h2>
-      <gameResult />
-      <gameResult />
-      <gameResult />
+      <calendar />
     </section>
   </main>
   <scrollToTop />

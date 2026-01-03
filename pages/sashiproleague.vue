@@ -37,12 +37,29 @@ useHead({
 
       </article>
     </section>
+  
     <Leaderboard />
+    <hr class="hr">
+    <section class="joinLeague">
+      <div class="title">
+        <h2>Join <span>Sashi Pro League</span></h2>
+        <p>Want to improve your game? In Sashi Pro League, we are ALWAYS aiming higher! #EatOrBeEaten</p>
+      </div>
+    </section>
     <TheFooter />
 </main>
 </template>
 
 <style scoped>
+  .joinLeague{
+    padding: 2rem;
+  }
+  .joinLeague .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   article{
   display: flex;
   flex-direction: column;
