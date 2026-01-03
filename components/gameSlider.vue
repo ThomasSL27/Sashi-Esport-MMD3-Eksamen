@@ -59,8 +59,10 @@ const scoreForThem = (score) => score.split('-')[1]
 
 <style scoped>
 .wrapper {
+  /* background: rgba(255, 0, 0, .1); */
   background: transparent;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .container {
