@@ -15,6 +15,9 @@
         <playerCard />
     </div>
 </section>
+        <WinCounter />
+        <hr class="hr">
+        <TheFooter /> 
 </main>
 </template>
 
