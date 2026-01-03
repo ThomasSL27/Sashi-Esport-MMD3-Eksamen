@@ -60,7 +60,6 @@ const scoreForThem = (score) => score.split('-')[1]
 <style scoped>
 .wrapper {
   background: transparent;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
