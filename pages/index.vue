@@ -17,11 +17,8 @@ useHead({
         <div class="smoke"></div>
         <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Logo" id="sashiLogo" data-aos="zoom-in">
         <h1>SASHI <span>ESPORT</span></h1>
-        <h2>Proffesional Counter-Strike 2 Team</h2>
-        <div class="buttonDiv">
-          <NuxtLink to="/team"><button class="redBtn">Meet the team</button></NuxtLink>
-          <NuxtLink to="/results"><button class="greyBtn">View restults</button></NuxtLink><
-        </div>
+        <h2>Professional Counter-Strike 2 Team</h2>
+
         <a href="#teamIntro" class="arrowLink"><i class="fa-solid fa-arrow-down"></i></a>
       </article>
     </section>
