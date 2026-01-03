@@ -46,8 +46,8 @@ const toggleFlip = (id) => {
       </div>
 
       <div class="card-back">
-        <h3>Stats / Bio</h3>
-        <p>More info about {{ player.acf?.playername }} could go here.</p>
+        <h3>HLTV Rating: {{ player.acf?.playerrating }}</h3>
+        <p>{{ player.acf?.playername }}</p>
       </div>
     </div>
   </div>
