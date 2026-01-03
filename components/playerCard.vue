@@ -25,7 +25,7 @@ const toggleFlip = (id) => {
           <img :src="player.acf?.playerpic" alt="Player Picture">
 
           <!-- TEXT ON HOVER -->
-          <span class="hover-text">shoot to flip</span>
+          <span class="hover-text">Shoot To Flip!</span>
         </div>
 
         <hr class="hr">
