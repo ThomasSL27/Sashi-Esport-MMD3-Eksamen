@@ -31,30 +31,25 @@ const submitForm = () => {
     <div class="red-box">
       <h2>Contact Us</h2>
       <p>Please fill out the form below and we’ll get back to you.</p>
+    <form @submit.prevent="submitForm">
+  <div class="field">
+    <label>Your Name</label>
+    <input type="text" placeholder="John Doe" v-model="form.name" required />
+  </div>
 
-      <form @submit.prevent="submitForm">
-        <input
-          type="text"
-          placeholder="Name"
-          v-model="form.name"
-          required
-        />
+  <div class="field">
+    <label>Your Email</label>
+    <input type="email" placeholder="JohnDoe@email.com" v-model="form.email" required />
+  </div>
 
-        <input
-          type="email"
-          placeholder="Email"
-          v-model="form.email"
-          required
-        />
+  <div class="field">
+    <label>Your Message</label>
+    <textarea placeholder="Hello Sashi..." v-model="form.message" required></textarea>
+  </div>
 
-        <textarea
-          placeholder="Message"
-          v-model="form.message"
-          required
-        />
+  <button type="submit">Send</button>
+</form>
 
-        <button type="submit">Send</button>
-      </form>
     </div>
   </div>
 </main>
@@ -62,10 +57,14 @@ const submitForm = () => {
 </template>
 
 <style scoped>
+  label{
+    margin: 0;
+  }
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 
@@ -94,6 +93,15 @@ const submitForm = () => {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 0.25rem; /* tight label → input spacing */
 }
 
 .red-box input,
