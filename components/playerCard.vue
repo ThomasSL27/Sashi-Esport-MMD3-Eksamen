@@ -19,14 +19,25 @@ const toggleFlip = (id) => {
       @click="toggleFlip(player.id)"
     >
       <div class="card-front">
-        <img :src="player.acf?.playerpic" alt="Player Picture">
+
+        <!-- IMAGE + HOVER TEXT -->
+        <div class="img-hover-wrap">
+          <img :src="player.acf?.playerpic" alt="Player Picture">
+
+          <!-- TEXT ON HOVER -->
+          <span class="hover-text">shoot to flip</span>
+        </div>
+
         <hr class="hr">
+
         <div class="info">
           <h3>{{ player.acf?.playername }}</h3>
+
           <div class="row">
             <i class="fa-solid fa-star"></i>
             <p>{{ player.acf?.playerrole }}</p>
           </div>
+
           <div class="row">
             <i class="fa-solid fa-location-dot"></i>
             <p>{{ player.acf?.playercountry }}</p>
@@ -49,7 +60,7 @@ const toggleFlip = (id) => {
   min-height: 400px;
   perspective: 1000px;
   background-color: transparent;
-  cursor: url(/assets/img/Vector\ \(3\).svg), auto; /* custom cursor */
+  cursor: url(/assets/img/Vector\ \(3\).svg), auto;
   margin-bottom: 2rem;
 }
 
@@ -75,7 +86,7 @@ const toggleFlip = (id) => {
   background-color: rgb(19, 19, 19);
   color: white;
   padding: 0.5rem;
-  border: 2px solid transparent;
+
 }
 
 .card-front {
@@ -96,41 +107,99 @@ const toggleFlip = (id) => {
   text-align: center;
 }
 
-/* 4. HOVER BORDER EFFECT */
-.player-card:hover .card-front,
-.player-card:hover .card-back {
-  border: 2px solid var(--mainRed, red);
+
+/* 5. IMAGE HOVER BOX EFFECT */
+.img-hover-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 
-/* 5. CONTENT STYLES */
-.card-front img {
+.img-hover-wrap img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Yellow border behind image */
+.img-hover-wrap::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-top: 15px solid red;
+  border-right: 15px solid red;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translate(10px, 10px);
+}
+
+.player-card:hover .img-hover-wrap::before {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* 6. TEXT THAT APPEARS ON HOVER */
+.hover-text {
+  position: absolute;
+  top: -30px; /* sits above the image */
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: red;
+  color: white;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.player-card:hover .hover-text {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* 7. CONTENT STYLES */
 .info { 
   margin: 0.5rem;
- }
+}
+
 .row { 
-  display: flex; padding: 0.1rem; align-items: center; gap: 1.5rem; 
+  display: flex; 
+  padding: 0.1rem; 
+  align-items: center; 
+  gap: 1.5rem; 
 }
+
 h3 { 
-  padding: 0; margin: 0.3rem 0; 
+  padding: 0; 
+  margin: 0.3rem 0; 
 }
+
 i { 
   color: red; 
 }
+
 .fa-star + p { 
   color: red; 
 }
+
 .fa-location-dot { 
   color: white; 
 }
+
 p { 
   margin: 0; 
 }
+
 .hr { 
-  border: 0; border-top: 1px solid #333; margin: 0.5rem 0; 
-  }
+  border: 0; 
+  border-top: 1px solid #333; 
+  margin: 0.5rem 0; 
+}
 </style>
