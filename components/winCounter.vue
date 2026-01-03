@@ -88,15 +88,23 @@ onBeforeUnmount(() => {
 }
 
 .counter-value {
-  font-size: 8rem;
+  font-size: clamp(3rem, 7vw, 8rem);
   font-weight: bold;
   color: #ff0000;
   margin: 0;
 }
 
 .counter-label {
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   color: white;
   margin-top: 5px;
 }
+@media (max-width: 700px){
+  .counters{
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+}
+
 </style>
