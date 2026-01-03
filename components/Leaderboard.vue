@@ -19,11 +19,12 @@ const getRankClass = (rank) => {
 </script>
 
 <template>
+    <hr class="hr">
   <div class="leaderboard-container">
     
     <!-- Header -->
     <div class="leaderboard-header">
-      <h1 class="leaderboard-title">CS2 Championship Leaderboard</h1>
+      <h1 class="leaderboard-title">Sashi proleague Leaderboard</h1>
       <p class="leaderboard-subtitle">
         Top teams competing for the championship title and prize pool. Rankings update in real-time based on tournament performance.
       </p>
@@ -91,7 +92,7 @@ const getRankClass = (rank) => {
             <span class="losses">{{ team.losses }}L</span>
           </div>
 
-          <!-- Change -->
+          <!-- Change in the league -->
           <div class="col-span-2 justify-center items-center">
             <span
               :class="{
@@ -112,7 +113,7 @@ const getRankClass = (rank) => {
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- last update -->
     <div class="leaderboard-footer">
       Last updated: {{ new Date().toLocaleString() }}
     </div>
