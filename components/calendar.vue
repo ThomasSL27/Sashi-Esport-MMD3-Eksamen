@@ -96,4 +96,14 @@
     gap: .5rem;
     justify-content: space-between;
 }
+@media (max-width: 700px){
+    .wrapper{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .items{
+        flex-direction: column;
+    }
+
+}
 </style>

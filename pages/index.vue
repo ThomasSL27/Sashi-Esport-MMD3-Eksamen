@@ -236,4 +236,24 @@ main::before {
     opacity: 0.8;
   }
 }
+@media (max-width: 700px){
+  #sashiLogo{
+  width: 60%;
+  position: relative;
+  z-index: 1337;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+.youtube{
+  padding: 0;
+}
+.results{
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  gap: 1rem;
+}
+}
 </style>

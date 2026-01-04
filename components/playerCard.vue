@@ -202,4 +202,10 @@ p {
   border-top: 1px solid #333; 
   margin: 0.5rem 0; 
 }
+@media (max-width: 700px){
+  template{
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>

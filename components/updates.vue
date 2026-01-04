@@ -55,4 +55,14 @@ p{
   border-bottom: 3px dotted white;
   margin: .5rem;
 }
+@media (max-width: 700px){
+  .video-container{
+    display: flex;
+    flex-direction: column;
+  }
+  iframe{
+    width: 100%;
+    height: 300px;
+  }
+}
 </style>

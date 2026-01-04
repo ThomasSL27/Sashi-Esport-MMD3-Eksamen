@@ -33,8 +33,7 @@ useHead({
       <hr class="hr">
       <article data-aos="fade-up">
         <h1>Highlights</h1>
-        <iframe width="960" height="540" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<iframe width="800" height="450" src="https://www.youtube.com/embed/SMXECrd1WQE?si=zG41ML7HrnXewoxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </article>
     </section>
   
@@ -146,8 +145,6 @@ img{
 }
 .leagueIntro p{
   color: white;
-  font-size: 1.2rem;
-  line-height: 1.6;
   text-align: left;
 }
 .leagueIntro div{
@@ -172,5 +169,44 @@ p{
   margin: 1rem;
   font-size: 1.2rem;
   
+}
+@media (max-width: 700px){
+  #sashiLogo{
+    width: 60%;
+  }
+  .leagueIntro{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  img{
+    width: 100%;
+    height: 300px;
+  }
+}
+.leagueIntro div{
+  margin: 0;
+  padding: 0;
+}
+iframe{
+  width: 100%;
+  height: 300px;
+  padding: 0;
+  border-radius: 0;
+}
+.highlights{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.highlights .hr{
+  margin-bottom: 0;
+}
+.highlights article{
+  padding: 0;
+}
 }
 </style>

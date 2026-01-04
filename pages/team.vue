@@ -37,7 +37,7 @@
 .voiceComms{
   display: flex;
   gap: 1rem;
-  padding: 2rem
+  padding: 2rem;
 }
 .hero img{
     width: 100vw;
@@ -67,5 +67,27 @@
 
 .team{
     margin: 2rem;
+}
+@media (max-width: 700px){
+  .cards {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-items: center;
+  align-items: center;
+}
+iframe{
+  width: 100%;
+  height: 300px;
+}
+.voiceComms{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  padding: 0;
+  p, h2{
+    padding: .5rem;
+  }
+}
 }
 </style>
