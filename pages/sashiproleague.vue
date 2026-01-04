@@ -201,6 +201,7 @@ iframe{
   padding: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin: 0;
 }
 .highlights .hr{
   margin-bottom: 0;

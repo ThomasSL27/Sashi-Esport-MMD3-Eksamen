@@ -213,4 +213,13 @@ main::before {
     opacity: 0.8;
   }
 }
+@media (max-width: 700px){
+  #sashiLogo{
+    width: 60%;
+  }
+  .wrapper{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
 </style>
