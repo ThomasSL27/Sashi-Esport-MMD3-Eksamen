@@ -44,20 +44,145 @@ useHead({
         <h2>Join <span>Sashi Pro League</span></h2>
         <p>Want to improve your game? In Sashi Pro League, we are ALWAYS aiming higher! #EatOrBeEaten</p>
       </div>
+
+      <div class="requirements">
+        <!-- Skill Rating -->
+        <div class="requirement-card">
+          <div class="requirement-icon">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+          <div class="requirement-header">
+            <h4>Skill Rating</h4>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="requirement-text">
+            Minimum rank of Master Guardian Elite (MGE) or equivalent in CS2.
+          </p>
+        </div>
+
+        <!-- Communication -->
+        <div class="requirement-card">
+          <div class="requirement-icon">
+            <i class="fa-solid fa-headphones"></i>
+          </div>
+          <div class="requirement-header">
+            <h4>Communication</h4>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="requirement-text">
+            Working microphone and Discord for clear, consistent team communication.
+          </p>
+        </div>
+
+        <!-- Team Player -->
+        <div class="requirement-card">
+          <div class="requirement-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <div class="requirement-header">
+            <h4>Team Player</h4>
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <p class="requirement-text">
+            Positive attitude and willingness to work with teammates and staff.
+          </p>
+        </div>
+      </div>
+
     </section>
-    <TheFooter />
 </main>
+<TheFooter />
 </template>
 
 <style scoped>
   .joinLeague{
-    padding: 2rem;
+    padding: 3rem 1rem 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
   }
   .joinLeague .title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .joinLeague .title p{
+    max-width: 40rem;
+  }
+
+  .requirements{
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 700px){
+    .requirements{
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .requirement-card{
+    background-color: rgb(19, 19, 19);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    border: 1px solid rgba(148, 27, 27, 0.7);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .requirement-card > *{
+    position: relative;
+    z-index: 1;
+  }
+
+  .requirement-icon{
+    width: 56px;
+    height: 56px;
+    border-radius: 1.1rem;
+    background: rgba(220, 38, 38, 0.16);
+    border: 1px solid rgba(239, 68, 68, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f97373;
+    margin-bottom: 0.25rem;
+  }
+
+  .requirement-icon i{
+    font-size: 1.4rem;
+  }
+
+  .requirement-header{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+
+  .requirement-header h4{
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .requirement-header i.fa-check{
+    color: #f97373;
+    font-size: 0.9rem;
+  }
+
+  .requirement-text{
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
   article{
   display: flex;
