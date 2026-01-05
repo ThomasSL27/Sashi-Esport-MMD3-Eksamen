@@ -34,6 +34,8 @@ useHead({
       <article data-aos="fade-up">
         <h1>Highlights</h1>
 <iframe width="800" height="450" src="https://www.youtube.com/embed/SMXECrd1WQE?si=zG41ML7HrnXewoxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>Check out the highlights from our Sashi Esport Leauge.
+The biggest plays, clutch moments, and momentum shifting rounds all packed into one fast paced recap. See how the game unfolded through the plays that mattered most!</p>
       </article>
     </section>
   
