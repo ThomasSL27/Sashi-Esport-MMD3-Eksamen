@@ -31,6 +31,7 @@ useHead({
       <div class="teamIntro" id="teamIntro">
         <h2>Our <span>Roster</span></h2>
         <p>Meet our players</p>
+        <p id="flip">Flip cards for more info</p>
       </div>
       <div class="cards">
         <playerCard />
@@ -57,12 +58,18 @@ useHead({
 </template>
 
 <style scoped>
+  #flip{
+    display: none;
+  }
   .youtube{
     padding: 2rem;
   }
 .sashiYT{
   display: flex;
   justify-content: center;
+}
+.sashiYT h2{
+  padding-bottom: 2rem;
 }
 
 .coach{
@@ -152,11 +159,9 @@ useHead({
   grid-template-columns: repeat(5, minmax(250px, 1fr));
   gap: .5rem;
   justify-items: center;
+  padding-top: 1rem;
 }
 
-h2{
-  padding-bottom: 2rem;
-}
 .team{
   display: flex;
   flex-direction: column;
@@ -254,6 +259,9 @@ main::before {
   flex-direction: column;
   padding: 0rem;
   gap: 1rem;
+}
+#flip{
+  display: block;
 }
 }
 </style>
