@@ -44,6 +44,25 @@ useHead({
       </article>
     </section>
     </main>
+    <hr class="hr">
+    <section class="JnMeat">
+      <div>
+ <img src="@/assets/img/JNMeatLogo.png" alt="JN Meat Logo">
+      </div>
+      <div>
+       
+                    <h2>JN Meat - Award - Winning Producer of Premium Steaks</h2>
+          <p>
+JN Meat is a Danish meat producer and wholesaler based in Slagelse, recognized worldwide for delivering some of the finest steaks on the market. As a multi-award-winning company, including several gold medals from the World Steak Challenge, JN Meat has earned a global reputation for exceptional quality, craftsmanship, and consistency.
+<br>
+Their philosophy is built on one core belief: <span>Quality has no limits</span>. <br>JN Meat relies on skilled specialists, strict hygiene standards, and rigorous internal quality control to ensure every cut meets the highest expectations.
+<br>
+The company supplies the Danish HORECA sector, retailers, and international partners, supported by reliable distribution and a strong commitment to sustainability and responsible sourcing.
+<br>
+Blending tradition, expertise, and modern production standards, JN Meat continues to set the benchmark for premium meat — proving that you don't need to be the biggest to be the best.</p>
+       
+      </div>
+    </section>
      <scrollToTop />
     <TheFooter />
 </template>
@@ -91,6 +110,18 @@ section{
 }
 .aboutSashiImg img{
   width: 100%;
+}
+/* jn meat section styling */
+.JnMeat{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 4rem 2rem;
+  gap: 2rem;
+}
+.JnMeat img{
+  width: 100%;
+  padding: 1rem;
 }
 
 @media (max-width: 700px){
