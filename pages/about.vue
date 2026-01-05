@@ -44,6 +44,7 @@ useHead({
       </article>
     </section>
     </main>
+     <scrollToTop />
     <TheFooter />
 </template>
 

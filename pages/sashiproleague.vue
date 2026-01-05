@@ -44,7 +44,6 @@ useHead({
         <h2>Join <span>Sashi Pro League</span></h2>
         <p>Want to improve your game? In Sashi Pro League, we are ALWAYS aiming higher! #EatOrBeEaten</p>
       </div>
-
       <div class="requirements">
         <!-- Skill Rating -->
         <div class="requirement-card">
@@ -59,7 +58,6 @@ useHead({
             Minimum rank of Master Guardian Elite (MGE) or equivalent in CS2.
           </p>
         </div>
-
         <!-- Communication -->
         <div class="requirement-card">
           <div class="requirement-icon">
@@ -73,7 +71,6 @@ useHead({
             Working microphone and Discord for clear, consistent team communication.
           </p>
         </div>
-
         <!-- Team Player -->
         <div class="requirement-card">
           <div class="requirement-icon">
@@ -88,13 +85,34 @@ useHead({
           </p>
         </div>
       </div>
-
+      <div class="joinNow">
+        <h2>Ready to <span>improve?</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe similique odit nostrum laboriosam odio ipsa et minus aspernatur adipisci recusandae.</p>
+        <a href="https://faceit.com/en/inv/Qc4Kay8" target="_blank" rel="noopener noreferrer">
+          <button>Play now!</button>
+        </a>
+      </div>
     </section>
 </main>
+ <scrollToTop />
 <TheFooter />
 </template>
 
 <style scoped>
+  .joinNow{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .joinNow button{
+    border: none;
+    padding: 1rem;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 10px;
+  }
   .joinLeague{
     padding: 3rem 1rem 4rem;
     max-width: 1280px;

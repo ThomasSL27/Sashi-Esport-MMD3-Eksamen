@@ -29,8 +29,9 @@
 </section>
 <hr class="hr">
 <calendar />
-    <TheFooter /> 
 </main>
+ <scrollToTop />
+<TheFooter /> 
 </template>
 
 <style scoped>
