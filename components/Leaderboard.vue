@@ -79,7 +79,7 @@ const getRankClass = (rank) => {
           </div>
 
           <!-- Points -->
-          <div class="col-span-2 justify-center items-center">
+          <div class="col-span-2 points-cell">
             <span class="points-badge">
               {{ team.points.toLocaleString() }}
             </span>
@@ -93,7 +93,7 @@ const getRankClass = (rank) => {
           </div>
 
           <!-- Change in the league -->
-          <div class="col-span-2 justify-center items-center">
+          <div class="col-span-2 change-cell">
             <span
               :class="{
                 'change-positive': team.change > 0,
@@ -121,7 +121,7 @@ const getRankClass = (rank) => {
   </div>
 </template>
 
-<style>
+<style scoped>
 /* Main Container */
 .leaderboard-container {
   max-width: 1280px;
@@ -279,6 +279,13 @@ const getRankClass = (rank) => {
   color: white;
 }
 
+/* Points Cell */
+.points-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Points Badge */
 .points-badge {
   color: white;
@@ -309,6 +316,13 @@ const getRankClass = (rank) => {
 
 .losses {
   color: #737373;
+}
+
+/* Change Cell */
+.change-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Change Indicator */
@@ -345,7 +359,4 @@ const getRankClass = (rank) => {
 /* Alignment */
 .text-center { text-align: center; }
 .text-right { text-align: right; }
-.items-center { align-items: center; }
-.justify-center { justify-content: center; }
-.justify-end { justify-content: flex-end; }
 </style>
