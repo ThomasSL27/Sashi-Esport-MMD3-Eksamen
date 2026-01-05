@@ -46,14 +46,19 @@ const toggleFlip = (id) => {
       </div>
 
       <div class="card-back">
-        <h3>HLTV Rating: {{ player.acf?.playerrating }}</h3>
-        <p>{{ player.acf?.playername }}</p>
+        <h3>{{ player.acf?.playername }}</h3>
+        <h4>{{ player.acf?.playerrealname }}</h4>
+        <p>{{ player.acf?.playerbio }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+  h4{
+    padding-bottom: 1rem;
+    font-size: 1rem;
+  }
 /* 1. THE CONTAINER */
 .player-card {
   width: 220px;
