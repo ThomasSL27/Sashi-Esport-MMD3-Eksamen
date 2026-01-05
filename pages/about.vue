@@ -20,21 +20,21 @@ useHead({
             <i class="fa-solid fa-bullseye"></i>
               <div class="bullet-content">
                <h4>Our Mission</h4>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, qui.</p>
+               <p>To compete with integrity, push our limits, and inspire the gaming community.</p>
               </div>
           </div>
           <div class="bullet">
              <i class="fa-solid fa-medal"></i>
               <div class="bullet-content">
               <h4>Our Values</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, sunt.</p>
+              <p>Teamwork, perseverance, respect, and passion for excellence.</p>
               </div>
           </div>
           <div class="bullet">
            <i class="fa-solid fa-bolt-lightning"></i>
              <div class="bullet-content">
              <h4>Our Vision</h4>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, dignissimos.</p>
+             <p>To be an Esports organization, recognized for skill, innovation, and community impact.</p>
             </div>
           </div>
         </div>
