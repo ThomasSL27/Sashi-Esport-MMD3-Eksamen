@@ -39,6 +39,7 @@ watch(isOpen, (open) => {
 
     <!-- DESKTOP LINKS -->
     <div class="navLinks">
+      <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/team">Team</NuxtLink>
       <NuxtLink to="/sashiproleague">Sashi Pro League</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
@@ -54,7 +55,7 @@ a.router-link-exact-active {
 
 nav {
   background-color: transparent;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,13 +65,16 @@ nav {
 }
 
 .navlogo img {
-  width: 3rem;
+  width: 5rem;
+  padding-left: 3rem;
+  padding-bottom: 0;
 }
 
 /* Desktop links */
 .navLinks {
   display: flex;
   gap: 4rem;
+  padding-right: 3rem;
 }
 
 a {

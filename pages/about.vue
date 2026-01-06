@@ -13,9 +13,9 @@ useHead({
     <gameSlider />
     <section>
       <article class="aboutSashi" data-aos="fade-right">
-        <h1>About SASHI <span>ESPORT</span></h1>
-        <p>Founded in 2022 and owned by Klaus Nielsen (D0KT0R3N), Sashi Esport is a professionally run esports organization focused on structure, discipline, and long‑term competitive growth. Our Counter‑Strike team is built on strong communication, tactical preparation, and a commitment to high‑level performance.
-Supported by dedicated management and coaching staff, we provide a stable environment where players can develop and compete internationally. Sashi Esport’s mission is to build a respected, ambitious, and sustainable organization that represents professionalism both inside and outside the server.</p>
+        <h2>About SASHI <span>ESPORT</span></h2>
+        <p>Founded in 2022 and owned by Klaus Nielsen (D0KT0R3N), Sashi Esport is a professionally run esports organization focused on structure, discipline, and longterm competitive growth. Our Counter-Strike team is built on strong communication, tactical preparation, and a commitment to high-level performance.
+Supported by dedicated management and coaching staff, we provide a stable environment where players can develop and compete internationally.</p>
         <div class="bulletPoints">
           <div class="bullet">
             <i class="fa-solid fa-bullseye"></i>
@@ -51,7 +51,8 @@ Supported by dedicated management and coaching staff, we provide a stable enviro
       </div>
       <div>
         <article>
-      <h2>JN Meat - Award - Winning Producer of Premium Steaks</h2>
+          <h2><span>Our Sponsor</span></h2>
+      <h3>JN Meat - Award - Winning Producer of Premium Steaks</h3>
       <p>
 JN Meat is a Danish meat producer and wholesaler based in Slagelse, recognized worldwide for delivering some of the finest steaks on the market. As a multi-award-winning company, including several gold medals from the World Steak Challenge, JN Meat has earned a global reputation for exceptional quality, craftsmanship, and consistency.
 <br>
@@ -117,7 +118,7 @@ section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 4rem 2rem;
+  margin: 4rem;
   gap: 5rem;
 }
 .JnMeat img{

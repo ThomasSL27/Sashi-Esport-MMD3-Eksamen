@@ -20,46 +20,43 @@ const submitForm = () => {
 <main>
     <TheNav />
     <gameSlider />
-        <section>
-      <article data-aos="fade-up">
-        <div class="smoke"></div>
-        <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Logo" id="sashiLogo" data-aos="zoom-in">
-        <h1>SASHI <span>ESPORT</span></h1>
-        <h2>Professional Counter-Strike 2 Team</h2>
-      </article>
+    <section>
+      <TheLogo />
+      <hr class="hr">
     </section>
-    <hr class="hr">
-    <div class="wrapper">
-    <!-- White box -->
-    <div class="white-box">
-      <h2 id="h2black">Ready to connect with Sashi Esport?</h2>
-  <p> Whether you're reaching out for partnerships, tournament opportunities, or just want to get in touch with the team, drop us a message below. We'll make sure the right people see it.</p>
+    <section class="contactform">
+      <div class="wrapper">
+      <!-- White box -->
+      <div class="white-box">
+        <h2 id="h2black">Ready to connect with Sashi Esport?</h2>
+    <p> Whether you're reaching out for partnerships, tournament opportunities, or just want to get in touch with the team, drop us a message below. We'll make sure the right people see it.</p>
+      </div>
+      <!-- Red box -->
+      <div class="red-box">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below and we'll get back to you.</p>
+      <form @submit.prevent="submitForm">
+    <div class="field">
+      <label>Your Name</label>
+      <input type="text" placeholder="John Doe" v-model="form.name" required />
     </div>
-    <!-- Red box -->
-    <div class="red-box">
-      <h2>Contact Us</h2>
-      <p>Please fill out the form below and we'll get back to you.</p>
-    <form @submit.prevent="submitForm">
-  <div class="field">
-    <label>Your Name</label>
-    <input type="text" placeholder="John Doe" v-model="form.name" required />
-  </div>
-
-  <div class="field">
-    <label>Your Email</label>
-    <input type="email" placeholder="JohnDoe@email.com" v-model="form.email" required />
-  </div>
-
-  <div class="field">
-    <label>Your Message</label>
-    <textarea placeholder="Hello Sashi..." v-model="form.message" required></textarea>
-  </div>
-
-  <button type="submit">Send</button>
-</form>
-
+  
+    <div class="field">
+      <label>Your Email</label>
+      <input type="email" placeholder="JohnDoe@email.com" v-model="form.email" required />
     </div>
-  </div>
+  
+    <div class="field">
+      <label>Your Message</label>
+      <textarea placeholder="Hello Sashi..." v-model="form.message" required></textarea>
+    </div>
+  
+    <button type="submit">Send</button>
+  </form>
+  
+      </div>
+    </div>
+    </section>
 </main>
 <TheFooter />
 </template>
@@ -75,7 +72,9 @@ const submitForm = () => {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+}
+.contactform{
+  margin: 4rem;
 }
 
 
@@ -83,6 +82,7 @@ const submitForm = () => {
   background: white;
   padding: 2rem;
   width: clamp(200px, 350px, 500px);
+  height: clamp(200px, 400px, 500px);
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
@@ -140,19 +140,7 @@ const submitForm = () => {
 .red-box button:hover {
   opacity: 0.9;
 }
-article{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 
-}
-#sashiLogo{
-  width: 15%;
-  position: relative;
-  z-index: 1337;
-}
 h1{
   color: white;
 }
@@ -188,35 +176,8 @@ main::before {
 
   pointer-events: none; 
 }
-.smoke {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgb(134, 3, 3) 0%, rgba(143, 5, 5, 0) 70%);
-  filter: blur(40px);
-  transform: translate(-50%, -50%) scale(1);
-  z-index: 1;
-  pointer-events: none;
-  animation: pulse 4s ease-in-out infinite;
-}
 
-@keyframes pulse {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.3);
-    opacity: 0.8;
-  }
-}
 @media (max-width: 700px){
-  #sashiLogo{
-    width: 60%;
-  }
   .wrapper{
     flex-direction: column;
     gap: 1rem;
