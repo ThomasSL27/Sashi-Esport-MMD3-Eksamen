@@ -67,6 +67,7 @@ const toggleFlip = (id) => {
   background-color: transparent;
   cursor: url(/assets/img/Vector\ \(3\).svg), auto;
   margin-bottom: 2rem;
+  margin: 2rem;
 }
 
 /* 2. THE INNER WRAPPER */

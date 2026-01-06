@@ -23,7 +23,7 @@ useHead({
       </div>
     </section>
     <hr class="hr">
-    <section class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+    <section class="HighlightSection" data-aos="fade-up" data-aos-duration="1000">
         <div>
           <iframe width="800" height="450" src="https://www.youtube.com/embed/SMXECrd1WQE?si=zG41ML7HrnXewoxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
@@ -226,7 +226,7 @@ grid-template-columns: repeat(2, 2fr);
 }
 /* highlights section styling */
 /* styling af video */
-.wrapper{
+.HighlightSection{
   display: flex;
   align-items: center;
   justify-content: center;

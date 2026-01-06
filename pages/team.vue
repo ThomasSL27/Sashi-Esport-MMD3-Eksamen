@@ -18,13 +18,13 @@
         <hr class="hr">
         <WinCounter />
         <hr class="hr">
-<section class="voiceComms">
+<section class="voiceCommsSection">
   <div class="video">
 <iframe width="800" height="450" src="https://www.youtube.com/embed/zRUhOwvVBvo?si=fPhgpOBNWgo2uOpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
-  <div class="videoText">
+  <div class="white-box">
     <h2>Inside the server: <span>Team Voice Comms</span></h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi mollitia quos modi, perferendis iure deserunt impedit officia quae porro unde ullam accusantium debitis facilis provident quam! Quod eum corrupti sunt?</p>
+    <p>Jump inside the action and hear every moment unfold. <br> Listen to the comms from our match against Ruby as Sashi Esport fires off callouts, reacts in real time, and battles through every clutch situation.</p>
   </div>
 </section>
 <hr class="hr">
@@ -35,11 +35,32 @@
 </template>
 
 <style scoped>
-.voiceComms{
+/* highlights section styling */
+/* styling af video */
+.voiceCommsSection{
   display: flex;
-  gap: 1rem;
-  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+
 }
+
+/* styling af kassen */
+.white-box {
+  background: white;
+  padding: 2rem;
+  width: clamp(200px, 350px, 500px);
+  height: clamp(200px, 300px, 400px);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.white-box p{
+  color: black;
+}
+.white-box h2{
+  color: black;
+}
+
 .hero img{
     width: 100vw;
     height: 50vh;
@@ -80,15 +101,6 @@
 iframe{
   width: 100%;
   height: 300px;
-}
-.voiceComms{
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 1rem;
-  padding: 0;
-  p, h2{
-    padding: .5rem;
-  }
 }
 }
 </style>

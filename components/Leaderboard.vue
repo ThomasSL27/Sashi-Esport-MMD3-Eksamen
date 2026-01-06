@@ -124,7 +124,7 @@ const getRankClass = (rank) => {
 <style scoped>
 /* Main Container */
 .leaderboard-container {
-  max-width: 1280px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 1rem;
 }
