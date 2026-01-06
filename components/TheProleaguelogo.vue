@@ -6,9 +6,9 @@
     <section>
       <article data-aos="fade-up">
         <div class="smoke"></div>
-        <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Logo" id="sashiLogo" data-aos="zoom-in">
-        <h1>SASHI <span>ESPORT</span></h1>
-        <h2>Professional Counter-Strike 2 Team</h2>
+        <img src="../assets/img/SashiProLeague.png" alt="Sashi Pro League Logo" id="sashiLogo" data-aos="zoom-in">
+        <h1>SASHI <span>PRO LEAGUE</span></h1>
+        <h2>Counter-Strike 2 League</h2>
 
         <a href="#teamIntro" class="arrowLink"><i class="fa-solid fa-arrow-down"></i></a>
       </article>
