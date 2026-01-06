@@ -60,6 +60,7 @@ nav {
   align-items: center;
   position: relative;
   z-index: 20;
+  border-bottom: 1px solid grey;
 }
 
 .navlogo img {
