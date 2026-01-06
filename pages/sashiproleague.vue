@@ -23,17 +23,15 @@ useHead({
       </div>
     </section>
     <hr class="hr">
-    <section class="highlights">
-      <article data-aos="fade-up">
-        <h2>Highlights</h2>
+    <section class="wrapper" data-aos="fade-up" data-aos-duration="1000">
         <div>
           <iframe width="800" height="450" src="https://www.youtube.com/embed/SMXECrd1WQE?si=zG41ML7HrnXewoxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div>
+        <div class="white-box">
+          <h2>Highlights</h2>
           <p>Check out the highlights from our Sashi Esport Leauge.
           The biggest plays, clutch moments, and momentum shifting rounds all packed into one fast paced recap. See how the game unfolded through the plays that mattered most!</p>
         </div>
-      </article>
     </section>
   
     <Leaderboard />
@@ -210,10 +208,7 @@ useHead({
 img{
   width: 40rem;
 }
-.highlights div{
-margin-top: 3rem;
-margin-bottom: 3rem;
-}
+
 
 .leagueIntro{
 display: grid;
@@ -229,13 +224,30 @@ grid-template-columns: repeat(2, 2fr);
   padding-top: 2rem;
   padding-left: 4rem;
 }
-iframe{
-  margin-top: 2rem;
-  border-radius: 1rem;
+/* highlights section styling */
+/* styling af video */
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+
 }
-.highlights{
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
+
+/* styling af kassen */
+.white-box {
+  background: white;
+  padding: 2rem;
+  width: clamp(200px, 350px, 500px);
+  height: clamp(200px, 300px, 400px);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.white-box p{
+  color: black;
+}
+.white-box h2{
+  color: red;
 }
 
 
