@@ -1,8 +1,10 @@
 <script setup>
 import { ref, watch } from 'vue'
 
+// Reaktiv tilstand der styrer om mobilmenuen er åben eller lukket
 const isOpen = ref(false)
 
+// Lås baggrundsscroll når mobilmenuen er åben, så siden ikke scroller bag overlayet
 watch(isOpen, (open) => {
   document.body.style.overflow = open ? 'hidden' : ''
 })
@@ -55,7 +57,7 @@ a.router-link-exact-active {
 
 nav {
   background-color: transparent;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,16 +67,14 @@ nav {
 }
 
 .navlogo img {
-  width: 5rem;
-  padding-left: 3rem;
-  padding-bottom: 0;
+  width: 4.5rem;
+  padding-left: 0;
 }
 
 /* Desktop links */
 .navLinks {
   display: flex;
-  gap: 4rem;
-  padding-right: 3rem;
+  gap: 3rem;
 }
 
 a {

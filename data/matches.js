@@ -1,3 +1,4 @@
+// Liste over seneste kampe – bruges i gameResult‑komponenten til at vise resultater
 export default [
   {
     "id": 1,

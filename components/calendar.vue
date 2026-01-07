@@ -1,5 +1,28 @@
 <script setup>
+import matches from '~/data/matches.js'
 
+// Helper til at formatere datoer pænt
+const formatDate = (date) =>
+  new Date(date).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  })
+
+// Seneste 4 resultater (sorteret efter dato faldende)
+const latestResults = computed(() =>
+  [...matches]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4)
+)
+
+// Seneste 4 sejre
+const latestWins = computed(() =>
+  [...matches]
+    .filter(match => match.result === 'win')
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4)
+)
 </script>
 
 <template>
@@ -8,58 +31,42 @@
         <div class="itemsWrapper">
             <h2>Calendar</h2>
             <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
+                <h3>TBA</h3>
+                <p>*CURRENTLY WINTHERBREAK*</p>
             </div>
             <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
+                <h3>TBA</h3>
+                <p>*CURRENTLY WINTHERBREAK*</p>
             </div>
             <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
+                <h3>TBA</h3>
+                <p>*CURRENTLY WINTHERBREAK*</p>
             </div>
             <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
+                <h3>TBA</h3>
+                <p>*CURRENTLY WINTHERBREAK*</p>
             </div>
         </div>
         <div class="itemsWrapper">
             <h2>Latest results</h2>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
-            </div>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
-            </div>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
-            </div>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
+            <div
+              v-for="result in latestResults"
+              :key="result.id"
+              class="items"
+            >
+                <h3>{{ formatDate(result.date) }}</h3>
+                <p>{{ result.competition }} — {{ result.opponent }} ({{ result.score }})</p>
             </div>
         </div>
         <div class="itemsWrapper">
             <h2>Latest wins</h2>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
-            </div>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
-            </div>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
-            </div>
-            <div class="items">
-                <h3>20 DEC</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, blanditiis.</p>
+            <div
+              v-for="result in latestWins"
+              :key="result.id"
+              class="items"
+            >
+                <h3>{{ formatDate(result.date) }}</h3>
+                <p>{{ result.competition }} — {{ result.opponent }} ({{ result.score }})</p>
             </div>
         </div>
     </div>

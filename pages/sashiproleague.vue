@@ -1,4 +1,5 @@
 <script setup>
+// Side‑metadata til <head> (titel og beskrivelse til SEO)
 useHead({
   title: "Sashi Esport - Sashi Pro Leaague",
   meta: [
@@ -211,11 +212,14 @@ img{
 
 
 .leagueIntro{
-display: grid;
-grid-template-columns: repeat(2, 2fr);
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
 }
 .leagueIntro div{
-  margin: 2rem;
+  margin: 0 1.5rem;
 }
 .leagueIntro div p{
   padding-top: 1rem;
@@ -230,8 +234,9 @@ grid-template-columns: repeat(2, 2fr);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
-
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
 }
 
 /* styling af kassen */

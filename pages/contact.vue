@@ -1,16 +1,20 @@
 <script setup>
+// Side‑metadata til <head> (titel og beskrivelse til SEO)
 useHead({
   title: "Sashi Esport - Contact",
   meta: [
     { name: "description", content: "Contact Sashi Esport" }
   ]
 })
+
+// Reaktivt objekt som holder værdierne fra kontaktformularen
 const form = ref({
   name: '',
   email: '',
   message: ''
 })
 
+// Simpel submit‑handler – her kan du senere udskifte console.log med et rigtigt API‑kald
 const submitForm = () => {
   console.log('Form submitted:', form.value)
 }
@@ -74,7 +78,9 @@ const submitForm = () => {
   justify-content: center;
 }
 .contactform{
-  margin: 4rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
 }
 
 

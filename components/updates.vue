@@ -1,4 +1,5 @@
 <script setup>
+// Statisk liste over seneste YouTube‑videoer / vlogs
 const updates = [
   {
     id: 1,
@@ -23,8 +24,10 @@ const updates = [
   }
 ]
 
+// Holder URL'en på den video der vises i venstre iframe
 const currentVideo = ref(updates[0].videoUrl)
 
+// Skift aktiv video når brugeren klikker på en update‑boks
 const setVideo = (update) => {
   currentVideo.value = update.videoUrl
 }

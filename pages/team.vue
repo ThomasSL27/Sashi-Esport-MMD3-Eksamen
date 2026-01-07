@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -7,7 +6,7 @@
 <TheNav />
 <gameSlider />
 <section class="hero">
-    <img src="/assets/img/SashiRetakeWin.jpg" alt="">
+    <img src="/assets/img/SashiRetakeWin.webp" alt="Sashi Esport Winning OMEN RETAKE">
 </section>
 <section class="team">
     <h1>SASHI <span>ESPORT</span> Team</h1>
@@ -41,8 +40,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
-
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
 }
 
 /* styling af kassen */
@@ -88,7 +88,9 @@
 }
 
 .team{
-    margin: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
 }
 @media (max-width: 700px){
   .cards {

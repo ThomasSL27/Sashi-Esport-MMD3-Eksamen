@@ -1,16 +1,18 @@
 <script setup>
-
+// Ref til selve container‑elementet i DOM'en, så IntersectionObserver kan overvåge det
 const containerRef = ref(null)
 let observer = null
 
+// Data til tællerne – target = slutværdi, value = den værdi der animeres op til
 const counters = ref([
   { target: 15, label: '1st places', value: 0, animated: false },
   { target: 23, label: '2nd places', value: 0, animated: false },
   { target: 18, label: '3rd places', value: 0, animated: false }
 ])
 
+// Animerer én tæller fra 0 til dens target ved hjælp af requestAnimationFrame
 function animateCounter(counter) {
-  const duration = 2000
+  const duration = 2000 // animationens længde i millisekunder
   const frameRate = 20
   const increment = counter.target / (duration / frameRate)
   let current = 0
@@ -28,6 +30,8 @@ function animateCounter(counter) {
   update()
 }
 
+// Når komponenten er monteret, opsættes en IntersectionObserver
+// så tællerne kun starter, når brugeren har scroll'et dem i viewporten
 onMounted(() => {
   observer = new IntersectionObserver(
     ([entry]) => {
@@ -39,11 +43,12 @@ onMounted(() => {
           }
         })
 
-        observer.disconnect() // run once
+        // Vi kan disconnecte efter første gang, så animationen kun sker én gang
+        observer.disconnect()
       }
     },
     {
-      threshold: 0.3 // trigger when 30% visible
+      threshold: 0.3 // trigges når ca. 30% af elementet er synligt
     }
   )
 
@@ -52,6 +57,7 @@ onMounted(() => {
   }
 })
 
+// Ryd op efter observer når komponenten fjernes
 onBeforeUnmount(() => {
   if (observer) observer.disconnect()
 })

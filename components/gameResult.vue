@@ -1,3 +1,6 @@
+<script setup>
+    
+</script>
 <template>
     <div class="gameResult">
 
@@ -64,5 +67,6 @@
     align-items: flex-end;
     font-size: 20px;
     font-weight: bold;
+    gap: 0.25rem;
 }
 </style>

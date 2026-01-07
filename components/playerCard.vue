@@ -1,10 +1,11 @@
 <script setup>
 import { ref } from 'vue';
 
+// Henter spillerdata fra WordPress REST API (acf‑felter bruges til billede, navn mm.)
 const url = 'https://mmd3.finnw.dk/wp-json/wp/v2/posts?_embed';
 const { data } = await useAsyncData('players', () => $fetch(url));
 
-// Track flipped state per card
+// Holder styr på hvilke kort der er "flipped" (true/false pr. player‑id)
 const flipped = ref({});
 const toggleFlip = (id) => {
   flipped.value[id] = !flipped.value[id];

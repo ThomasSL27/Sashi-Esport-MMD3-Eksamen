@@ -1,12 +1,14 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
 
+// Viser / skjuler knappen afhængig af hvor langt brugeren har scrollet ned
 const showButton = ref(false);
 
 const toggleScrollButton = () => {
   showButton.value = window.scrollY > 600;
 };
 
+// Glat scroll tilbage til toppen af siden
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -14,10 +16,12 @@ const scrollToTop = () => {
   });
 };
 
+// Lyt efter scroll-events når komponenten er aktiv
 onMounted(() => {
   window.addEventListener("scroll", toggleScrollButton);
 });
 
+// Ryd event listener op igen når komponenten fjernes
 onUnmounted(() => {
   window.removeEventListener("scroll", toggleScrollButton);
 });

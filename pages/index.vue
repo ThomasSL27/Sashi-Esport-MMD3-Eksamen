@@ -1,11 +1,11 @@
 <script setup>
+// Side‑metadata til <head> (titel og beskrivelse til SEO)
 useHead({
   title: "Sashi Esport - Forside",
   meta: [
     { name: "description", content: "Forside for Sashi Esport" }
   ]
 })
-
 </script>
 
 <template>
@@ -57,7 +57,9 @@ useHead({
     display: none;
   }
   .youtube{
-    padding: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
   }
 .sashiYT{
   display: flex;
@@ -81,7 +83,9 @@ useHead({
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
   gap: 1rem;
 }
 .greyBtn{
@@ -136,44 +140,9 @@ useHead({
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-}
-
-
-h1{
-  color: white;
-}
-span{
-  color: red;
-}
-main {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-
-  background: linear-gradient(
-    to bottom right,
-    black,
-    #18181b,
-    black
-  );
-}
-
-main::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.1;
-
-  background-image: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(139, 0, 0, 0.3) 2px,
-    rgba(139, 0, 0, 0.3) 4px
-  );
-
-  pointer-events: none; 
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
 }
 
 

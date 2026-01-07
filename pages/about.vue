@@ -1,4 +1,5 @@
 <script setup>
+// Side‑metadata til <head> (titel og beskrivelse til SEO)
 useHead({
   title: "Sashi Esport - About Us",
   meta: [
@@ -41,7 +42,7 @@ Supported by dedicated management and coaching staff, we provide a stable enviro
         </div>
       </article>
       <article class="aboutSashiImg" data-aos="fade-left">
-        <img src="@/assets/img/SashiRetakeWin.jpg" alt="">
+        <img src="@/assets/img/SashiHoldingTrophy.webp" alt="Sashi Esport holding trophy">
       </article>
     </section>
     <hr class="hr">
@@ -106,9 +107,13 @@ section{
   align-items: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  column-gap: 2.5rem;
 }
 .aboutSashi{
-  margin: 2rem;
+  margin: 0;
 }
 .aboutSashiImg img{
   width: 100%;
@@ -118,8 +123,10 @@ section{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 4rem;
-  gap: 5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+  gap: 3rem;
 }
 .JnMeat img{
   width: 100%;
