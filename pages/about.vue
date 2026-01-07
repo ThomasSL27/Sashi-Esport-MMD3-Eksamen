@@ -56,12 +56,12 @@ Supported by dedicated management and coaching staff, we provide a stable enviro
       <h3>JN Meat - Award - Winning Producer of Premium Steaks</h3>
       <p>
 JN Meat is a Danish meat producer and wholesaler based in Slagelse, recognized worldwide for delivering some of the finest steaks on the market. As a multi-award-winning company, including several gold medals from the World Steak Challenge, JN Meat has earned a global reputation for exceptional quality, craftsmanship, and consistency.
-<br>
-Their philosophy is built on one core belief: <span>Quality has no limits</span>. <br>JN Meat relies on skilled specialists, strict hygiene standards, and rigorous internal quality control to ensure every cut meets the highest expectations.
-<br>
+<br><br>
+Their philosophy is built on one core belief: <span>Quality has no limits</span>. <br><br>JN Meat relies on skilled specialists, strict hygiene standards, and rigorous internal quality control to ensure every cut meets the highest expectations.
+<br><br>
 The company supplies the Danish HORECA sector, retailers, and international partners, supported by reliable distribution and a strong commitment to sustainability and responsible sourcing.
-<br>
-Blending tradition, expertise, and modern production standards, JN Meat continues to set the benchmark for premium meat <br> proving that you don't need to be the biggest to be the best.</p>
+<br><br>
+Blending tradition, expertise, and modern production standards, JN Meat continues to set the benchmark for premium meat <br><br> proving that you don't need to be the biggest to be the best.</p>
 </article>
 </div>
 </section>
@@ -125,7 +125,7 @@ section{
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 3rem 1rem 4rem;
+  padding: 2rem 1rem 4rem;
   gap: 3rem;
 }
 .JnMeat img{
@@ -138,6 +138,13 @@ section{
   section{
     display: flex;
     flex-direction: column;
+  }
+  .JnMeat{
+    display: flex;
+    flex-direction: column;
+  }
+  .JnMeat img{
+    width: 100vw;
   }
  } 
 </style>

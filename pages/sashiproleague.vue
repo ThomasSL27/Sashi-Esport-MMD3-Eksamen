@@ -144,12 +144,6 @@ useHead({
     gap: 1.5rem;
   }
 
-  @media (min-width: 700px){
-    .requirements{
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
-
   .requirement-card{
     background-color: rgb(19, 19, 19);
     border-radius: 1rem;
@@ -262,7 +256,13 @@ img{
 
 
 @media (max-width: 700px){
-
+  .HighlightSection{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  }
   .leagueIntro{
   display: flex;
   flex-direction: column;
@@ -280,7 +280,7 @@ img{
   padding: 0;
 }
 iframe{
-  width: 100%;
+  width: 100vw;
   height: 300px;
   padding: 0;
   border-radius: 0;
@@ -299,5 +299,8 @@ iframe{
 .highlights article{
   padding: 0;
 }
+    .requirements{
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 </style>

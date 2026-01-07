@@ -38,7 +38,7 @@ useHead({
     <hr class="hr">
     <section class="youtube">
       <div class="sashiYT">
-        <h2>Sashi <span>Updates</span></h2>
+        <h2>Sashi <span>Vlogs</span></h2>
       </div>
       <updates />
     </section>
@@ -164,6 +164,8 @@ useHead({
 }
 .youtube{
   padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .results{
   display: flex;

@@ -101,8 +101,15 @@
   align-items: center;
 }
 iframe{
-  width: 100%;
+  width: 100vw;
   height: 300px;
+  padding: 0;
+}
+.voiceCommsSection{
+  flex-direction: column;
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 }
 </style>
