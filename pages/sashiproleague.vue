@@ -102,6 +102,9 @@ useHead({
 </template>
 
 <style scoped>
+.aboutText h2{
+  padding-top: 2rem;
+}
   .joinNow{
     padding-top: 2rem;
     display: flex;
@@ -225,8 +228,10 @@ img{
   padding-top: 1rem;
 }
 .aboutText{
-  padding-top: 2rem;
-  padding-left: 4rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* highlights section styling */
 /* styling af video */
@@ -265,6 +270,9 @@ img{
   img{
     width: 100%;
     height: 300px;
+  }
+  p{
+    padding: 1rem;
   }
 }
 .leagueIntro div{

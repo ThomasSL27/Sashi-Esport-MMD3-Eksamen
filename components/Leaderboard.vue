@@ -26,7 +26,7 @@ const getRankClass = (rank) => {
     
     <!-- Header -->
     <div class="leaderboard-header">
-      <h1 class="leaderboard-title">Sashi proleague Leaderboard</h1>
+      <h2 class="leaderboard-title">Sashi proleague Leaderboard</h2>
       <p class="leaderboard-subtitle">
         Top teams competing for the championship title and prize pool. Rankings update in real-time based on tournament performance.
       </p>
@@ -353,12 +353,69 @@ const getRankClass = (rank) => {
   color: #525252;
 }
 
+/* Mobil-layout */
+@media (max-width: 700px) {
+  .leaderboard-container {
+    padding: 2rem 1rem;
+  }
+
+  .leaderboard-header {
+    margin-bottom: 2rem;
+  }
+
+  .prize-pool-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skjul tabel-header og gør hver række til et "kort" */
+  .table-header {
+    display: none;
+  }
+
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .rank-number,
+  .team-section,
+  .points-cell,
+  .win-loss,
+  .change-cell,
+  .prize-text {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .points-cell,
+  .win-loss,
+  .change-cell {
+    justify-content: flex-start;
+  }
+
+  .prize-text {
+    margin-top: 0.25rem;
+  }
+}
+
 /* Column Spans */
-.col-span-1 { grid-column: span 1; }
-.col-span-2 { grid-column: span 2; }
-.col-span-4 { grid-column: span 4; }
+.col-span-1 { 
+grid-column: span 1; 
+}
+.col-span-2 { 
+grid-column: span 2; 
+}
+.col-span-4 { 
+grid-column: span 4; 
+}
 
 /* Alignment */
-.text-center { text-align: center; }
-.text-right { text-align: right; }
+.text-center { 
+text-align: center; 
+}
+.text-right { 
+text-align: right; 
+}
 </style>
