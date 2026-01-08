@@ -24,10 +24,6 @@ const submitForm = () => {
 <main>
     <TheNav />
     <gameSlider />
-    <section>
-      <TheLogo />
-      <hr class="hr">
-    </section>
     <section class="contactform">
       <div class="wrapper">
       <!-- White box -->

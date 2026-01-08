@@ -20,7 +20,7 @@ useHead({
         <p>The Sashi Pro League is a premier Counter-Strike 2 competition featuring top-tier teams from around the globe. Established to foster competitive play and showcase elite talent, the league offers thrilling matches, strategic gameplay, and a platform for players to demonstrate their skills on an international stage. With a commitment to excellence and sportsmanship, the Sashi Pro League aims to elevate the esports community and provide fans with unforgettable gaming experiences.</p>
       </div>
       <div>
-        <img src="../assets/img/SashiRetakeWin.jpg" alt="">
+        <img src="../assets/img/SashiRetakeWin.webp" alt="">
       </div>
     </section>
     <hr class="hr">
