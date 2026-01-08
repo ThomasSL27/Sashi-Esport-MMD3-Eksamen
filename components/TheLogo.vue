@@ -1,4 +1,6 @@
 <script setup>
+// Logo-komponent til hero-sektion på forsiden
+// Viser Sashi Esport logo med animationer og smoke effect
 </script>
 
 <template>
@@ -25,7 +27,9 @@
 </template>
 
 <style scoped>
-/* --- Smoke Effect --- */
+/* ============================================
+   SMOKE EFFECT
+   ============================================ */
 .smoke {
   position: absolute;
   top: 20%;
@@ -41,7 +45,9 @@
   animation: pulse 4s ease-in-out infinite 1s; /* delayed start to avoid LCP blocking */
 }
 
-/* --- Logo --- */
+/* ============================================
+   LOGO IMAGE
+   ============================================ */
 #sashiLogo {
   width: 15%;
   max-width: 100%;
@@ -51,7 +57,9 @@
   display: block; /* helps browser layout */
 }
 
-/* --- Article Layout --- */
+/* ============================================
+   ARTICLE LAYOUT
+   ============================================ */
 article {
   display: flex;
   flex-direction: column;
@@ -61,7 +69,9 @@ article {
   padding-bottom: 6rem;
 }
 
-/* --- Arrow Link --- */
+/* ============================================
+   ARROW LINK (SCROLL DOWN)
+   ============================================ */
 .arrowLink {
   position: absolute; 
   bottom: 1rem; 
@@ -75,7 +85,9 @@ article {
   color: red; 
 }
 
-/* --- Animations --- */
+/* ============================================
+   ANIMATIONS
+   ============================================ */
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -93,7 +105,9 @@ article {
   }
 }
 
-/* --- Responsive --- */
+/* ============================================
+   RESPONSIVE - MOBIL LAYOUT
+   ============================================ */
 @media (max-width: 700px) {
   #sashiLogo {
     width: 60%;

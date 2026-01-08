@@ -1,14 +1,20 @@
 <script setup>
+// Importerer kampdata fra matches.js
 import matches from '~/data/matches.js'
 
+// Helper-funktion til at formatere datoer i et læsbart format
+// Konverterer DD-MM-YYYY til format som "Dec 23, 2025"
 const formatDate = (date) =>
   new Date(date).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric'
+    month: 'short',    // Forkortet månednavn (Dec, Nov, osv.)
+    day: 'numeric',    // Dag som tal
+    year: 'numeric'    // År som tal
   })
 
+// Hjælpefunktion: Udtrækker holdets score fra score-strengen (fx "2-1" -> "2")
 const scoreForUs = (score) => score.split('-')[0]
+
+// Hjælpefunktion: Udtrækker modstanderens score fra score-strengen (fx "2-1" -> "1")
 const scoreForThem = (score) => score.split('-')[1]
 </script>
 
@@ -58,27 +64,42 @@ const scoreForThem = (score) => score.split('-')[1]
 </template>
 
 <style scoped>
+/* ============================================
+   WRAPPER
+   ============================================ */
 .wrapper {
   background: transparent;
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
 
+/* ============================================
+   CONTAINER
+   ============================================ */
 .container {
   max-width: 100%;
   margin: auto;
 }
 
+/* ============================================
+   SCROLL CONTAINER
+   ============================================ */
 .scroll {
   overflow-x: auto;
   padding-bottom: 1rem;
 }
 
+/* ============================================
+   CARDS LAYOUT
+   ============================================ */
 .cards {
   display: flex;
   gap: 1rem;
 }
 
+/* ============================================
+   CARD STYLING
+   ============================================ */
 .card {
   width: 16rem;
   background: rgb(19,19,19);
@@ -96,6 +117,9 @@ const scoreForThem = (score) => score.split('-')[1]
   border-color: rgba(239, 68, 68, 0.5);
 }
 
+/* ============================================
+   CARD HEADER
+   ============================================ */
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -114,6 +138,9 @@ const scoreForThem = (score) => score.split('-')[1]
   color: #f87171;
 }
 
+/* ============================================
+   TEAMS SECTION
+   ============================================ */
 .teams {
    display: flex;
   flex-direction: row;
@@ -135,11 +162,13 @@ const scoreForThem = (score) => score.split('-')[1]
   object-fit: contain;
 }
 
-
 .divider {
     display: none;
 }
 
+/* ============================================
+   DATE DISPLAY
+   ============================================ */
 .date {
   margin-top: .35rem;
   font-size: 0.65rem;
@@ -147,6 +176,9 @@ const scoreForThem = (score) => score.split('-')[1]
   color: #94a3b8;
 }
 
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
 .scrollbar-custom::-webkit-scrollbar {
   height: 8px;
 }

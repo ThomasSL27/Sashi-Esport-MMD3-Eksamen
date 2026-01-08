@@ -1,27 +1,29 @@
 <script setup>
+// Importerer kampdata fra matches.js
 import matches from '~/data/matches.js'
 
-// Helper til at formatere datoer pænt
+// Helper-funktion til at formatere datoer i et læsbart format
+// Konverterer DD-MM-YYYY til format som "Dec 23, 2025"
 const formatDate = (date) =>
   new Date(date).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric'
+    month: 'short',    // Forkortet månednavn (Dec, Nov, osv.)
+    day: 'numeric',    // Dag som tal
+    year: 'numeric'    // År som tal
   })
 
-// Seneste 4 resultater (sorteret efter dato faldende)
+// Computed property: Seneste 4 kampe (alle resultater) sorteret efter dato, nyeste først
 const latestResults = computed(() =>
   [...matches]
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 4)
+    .sort((a, b) => new Date(b.date) - new Date(a.date))  // Sorter efter dato, faldende
+    .slice(0, 4)                                            // Tag kun de første 4
 )
 
-// Seneste 4 sejre
+// Computed property: Seneste 4 sejre, sorteret efter dato, nyeste først
 const latestWins = computed(() =>
   [...matches]
-    .filter(match => match.result === 'win')
-    .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 4)
+    .filter(match => match.result === 'win')              // Filtrer kun sejre
+    .sort((a, b) => new Date(b.date) - new Date(a.date))  // Sorter efter dato, faldende
+    .slice(0, 4)                                            // Tag kun de første 4
 )
 </script>
 
@@ -74,21 +76,27 @@ const latestWins = computed(() =>
 </template>
 
 <style scoped>
-/* Main Container */
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
 .calendarSec {
     max-width: 1280px;
     margin: 0 auto;
     padding: 3rem 1rem;
 }
 
-/* Wrapper */
+/* ============================================
+   WRAPPER - FLEX LAYOUT
+   ============================================ */
 .wrapper {
     display: flex;
     gap: 1.5rem;
     justify-content: space-between;
 }
 
-/* Items Wrapper */
+/* ============================================
+   ITEMS WRAPPER
+   ============================================ */
 .itemsWrapper {
     display: flex;
     flex-direction: column;
@@ -102,7 +110,9 @@ const latestWins = computed(() =>
     text-align: center;
 }
 
-/* Items */
+/* ============================================
+   ITEMS - INDIVIDUELLE KAMP/EVENT KORT
+   ============================================ */
 .items {
     display: flex;
     padding: 1.25rem 1.5rem;
@@ -135,7 +145,9 @@ const latestWins = computed(() =>
     margin: 0;
 }
 
-/* Responsive */
+/* ============================================
+   RESPONSIVE - MOBIL LAYOUT
+   ============================================ */
 @media (max-width: 768px) {
     .wrapper {
         flex-direction: column;

@@ -52,11 +52,17 @@ const toggleFlip = (id) => {
 </template>
 
 <style scoped>
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
   h4{
     padding-bottom: 1rem;
     font-size: 1rem;
   }
-/* 1. THE CONTAINER */
+
+/* ============================================
+   PLAYER CARD CONTAINER
+   ============================================ */
 .player-card {
   width: 220px;
   min-height: 400px;
@@ -67,7 +73,9 @@ const toggleFlip = (id) => {
   margin: 2rem;
 }
 
-/* 2. THE INNER WRAPPER */
+/* ============================================
+   CARD INNER WRAPPER (3D FLIP EFFECT)
+   ============================================ */
 .card-inner {
   position: relative;
   width: 100%;
@@ -76,12 +84,14 @@ const toggleFlip = (id) => {
   transform-style: preserve-3d;
 }
 
-/* Flipped on click */
+/* Flipped state når kortet klikkes */
 .card-inner.flipped {
   transform: rotateY(180deg);
 }
 
-/* 3. SHARED SIDE STYLES */
+/* ============================================
+   CARD FRONT & BACK SIDES
+   ============================================ */
 .card-front, .card-back {
   width: 100%;
   backface-visibility: hidden;
@@ -111,7 +121,9 @@ const toggleFlip = (id) => {
 }
 
 
-/* 5. IMAGE HOVER BOX EFFECT */
+/* ============================================
+   IMAGE HOVER EFFECT
+   ============================================ */
 .img-hover-wrap {
   position: relative;
   display: inline-block;
@@ -144,7 +156,9 @@ const toggleFlip = (id) => {
   transform: translate(0, 0);
 }
 
-/* 6. Hover text */
+/* ============================================
+   HOVER TEXT (SHOOT TO FLIP)
+   ============================================ */
 .hover-text {
   position: absolute;
   top: -32px; /* sits above the image */
@@ -162,7 +176,9 @@ const toggleFlip = (id) => {
   opacity: 1;
 }
 
-/* 7. CONTENT STYLES */
+/* ============================================
+   CONTENT STYLES
+   ============================================ */
 .info { 
   margin: 0.5rem;
 }
@@ -200,6 +216,9 @@ p {
   border-top: 1px solid #333; 
   margin: 0.5rem 0; 
 }
+/* ============================================
+   RESPONSIVE - MOBIL LAYOUT
+   ============================================ */
 @media (max-width: 700px){
   template{
     display: flex;

@@ -1,5 +1,6 @@
 <script setup>
-
+// Footer-komponent med links, kontaktinfo og sociale medier
+// Indeholder navigation links, kontaktinformation og sociale medie-ikoner
 </script>
 
 <template>
@@ -18,7 +19,7 @@
     <div id="column2">
         <p>Quick Links</p>
         <NuxtLink to="/">Team</NuxtLink>
-        <NuxtLink to="/sashiproleague">Sashi proleague</NuxtLink>
+        <NuxtLink to="/results">Results</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/contact">Contact us</NuxtLink>
     </div>
@@ -30,9 +31,16 @@
 </template>
 
 <style scoped>
+/* ============================================
+   HR DIVIDER
+   ============================================ */
 .hr {
   grid-column: 1 / -1;
 }
+
+/* ============================================
+   SOCIAL MEDIA LINKS
+   ============================================ */
 .socials{
     display: flex;
     gap: 1rem;
@@ -52,10 +60,16 @@
 a:hover{
     color: red;
 }
+/* ============================================
+   LOGO IMAGE
+   ============================================ */
 img {
   width: 10%;
 }
 
+/* ============================================
+   FOOTER MAIN CONTAINER
+   ============================================ */
 footer {
   box-sizing: border-box;
   padding: 0rem 3rem 3rem 3rem;
@@ -78,6 +92,9 @@ footer {
   gap: 0.5rem;
 }
 
+/* ============================================
+   RESPONSIVE - MOBIL LAYOUT
+   ============================================ */
 @media (max-width: 768px) {
   footer {
     grid-template-columns: 1fr;

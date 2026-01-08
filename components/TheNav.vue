@@ -51,10 +51,16 @@ watch(isOpen, (open) => {
 </template>
 
 <style scoped>
+/* ============================================
+   ACTIVE NAVIGATION LINK
+   ============================================ */
 a.router-link-exact-active {
   color: red;
 }
 
+/* ============================================
+   NAVIGATION CONTAINER
+   ============================================ */
 nav {
   background-color: transparent;
   padding: 1rem 1.5rem;
@@ -71,7 +77,17 @@ nav {
   padding-left: 0;
 }
 
-/* Desktop links */
+/* ============================================
+   NAVIGATION LOGO
+   ============================================ */
+.navlogo img {
+  width: 4.5rem;
+  padding-left: 0;
+}
+
+/* ============================================
+   DESKTOP NAVIGATION LINKS
+   ============================================ */
 .navLinks {
   display: flex;
   gap: 3rem;
@@ -113,6 +129,9 @@ a:hover {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+/* ============================================
+   MOBILE MENU OVERLAY
+   ============================================ */
 .mobileMenu {
   position: fixed;
   inset: 0; 
@@ -130,6 +149,9 @@ a:hover {
   color: white;
 }
 
+/* ============================================
+   RESPONSIVE - MOBIL LAYOUT
+   ============================================ */
 @media (max-width: 768px) {
   .navLinks {
     display: none;
