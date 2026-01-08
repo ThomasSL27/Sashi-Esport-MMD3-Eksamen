@@ -14,7 +14,7 @@ watch(isOpen, (open) => {
   <nav>
     <div class="navlogo">
       <NuxtLink to="/" aria-label="Back to Home Page">
-        <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Logo - Back to Home Page" id="sashiLogo">
+        <img src="@/assets/img/sashiEsportLogo.webp" alt="Sashi Logo - Back to Home Page" id="sashiLogo">
       </NuxtLink>
     </div>
 
