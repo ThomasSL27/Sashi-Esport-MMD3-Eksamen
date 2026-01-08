@@ -173,6 +173,9 @@ useHead({
   padding: 0rem;
   gap: 1rem;
 }
+.results h2{
+  padding-top: 2rem;
+}
 #flip{
   display: block;
 }

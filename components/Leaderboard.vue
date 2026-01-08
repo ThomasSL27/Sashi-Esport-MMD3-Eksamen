@@ -1,5 +1,6 @@
 <script setup>
-// Statisk liste over hold i ligaen med point, W/L og præmiepulje
+  
+// Statisk Dummydata liste over hold i ligaen med point, W/L og præmiepulje
 const teams = [
   { id: 1, name: "Natus Vincere", points: 2850, wins: 28, losses: 5, prize: "$50,000", logo: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=100&h=100&fit=crop", change: 2 },
   { id: 2, name: "FaZe Clan", points: 2720, wins: 26, losses: 7, prize: "$30,000", logo: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=100&h=100&fit=crop", change: -1 },
@@ -32,7 +33,7 @@ const getRankClass = (rank) => {
       </p>
     </div>
 
-    <!-- Prize Pool -->
+    <!-- Prize Pool (dummy data)-->
     <div class="prize-pool-grid">
       <div class="prize-card-first">
         <span class="prize-label">1st Place</span>

@@ -111,5 +111,11 @@ iframe{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.white-box {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  max-height: fit-content;
+
+}
 }
 </style>

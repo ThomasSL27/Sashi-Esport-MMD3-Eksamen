@@ -141,7 +141,7 @@ section{
   }
   .JnMeat{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .JnMeat img{
     width: 100vw;

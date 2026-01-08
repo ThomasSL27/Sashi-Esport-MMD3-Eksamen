@@ -285,6 +285,9 @@ img{
   margin: 0;
   padding: 0;
 }
+.leagueIntro img{
+  padding-bottom: 2rem;
+}
 iframe{
   width: 100vw;
   height: 300px;
@@ -301,9 +304,19 @@ iframe{
   padding-bottom: 1rem;
   margin: 0;
 }
+.white-box {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  max-height: fit-content;
+
+}
 
 .highlights article{
   padding: 0;
 }
+.requirements{
+    grid-template-columns: 1fr;
+}
+
 }
 </style>

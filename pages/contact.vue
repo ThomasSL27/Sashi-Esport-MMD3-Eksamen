@@ -28,7 +28,7 @@ const submitForm = () => {
       <div class="wrapper">
       <!-- White box -->
       <div class="white-box">
-        <h2 id="h2black">Ready to connect with Sashi Esport?</h2>
+        <h2 id="h2black"><span>Ready to connect with Sashi Esport?</span></h2>
     <p> Whether you're reaching out for partnerships, tournament opportunities, or just want to get in touch with the team, drop us a message below. We'll make sure the right people see it.</p>
       </div>
       <!-- Red box -->
@@ -184,5 +184,10 @@ main::before {
     flex-direction: column;
     gap: 1rem;
   }
+  .white-box {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  max-height: fit-content;
+}
 }
 </style>
