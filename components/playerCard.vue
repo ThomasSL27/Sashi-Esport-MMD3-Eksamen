@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 
 // Henter spillerdata fra WordPress REST API (acf‑felter bruges til billede, navn mm.)
 const url = 'https://mmd3.finnw.dk/wp-json/wp/v2/posts?_embed';
@@ -20,7 +19,6 @@ const toggleFlip = (id) => {
       @click="toggleFlip(player.id)"
     >
       <div class="card-front">
-
         <!-- IMAGE + HOVER TEXT -->
         <div class="img-hover-wrap">
           <img :src="player.acf?.playerpic" alt="Player Picture">
@@ -28,9 +26,7 @@ const toggleFlip = (id) => {
           <!-- TEXT ON HOVER -->
           <span class="hover-text">Shoot To Flip!</span>
         </div>
-
         <hr class="hr">
-
         <div class="info">
           <h3>{{ player.acf?.playername }}</h3>
 
