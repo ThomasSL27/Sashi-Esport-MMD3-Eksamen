@@ -18,7 +18,7 @@
     <div id="column2">
         <p>Quick Links</p>
         <NuxtLink to="/">Team</NuxtLink>
-        <NuxtLink to="/results">Results</NuxtLink>
+        <NuxtLink to="/sashiproleague">Sashi proleague</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/contact">Contact us</NuxtLink>
     </div>
