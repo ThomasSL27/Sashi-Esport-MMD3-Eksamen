@@ -6,7 +6,7 @@
 <TheNav />
 <gameSlider />
 <section class="hero">
-    <img src="/assets/img/SashiRetakeWin.webp" alt="Sashi Esport Winning OMEN RETAKE">
+    <img src="/assets/img/SashiRetakeWin.webp" alt="Sashi Esport Winning OMEN RETAKE" data-aos="fade-up">
 </section>
 <section class="team">
     <h1>SASHI <span>ESPORT</span> Team</h1>

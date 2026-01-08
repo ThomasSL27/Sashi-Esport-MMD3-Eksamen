@@ -15,7 +15,7 @@ useHead({
     <section>
       <article class="aboutSashi" data-aos="fade-right">
         <h2>About SASHI <span>ESPORT</span></h2>
-        <p>Founded in 2022 and owned by Klaus Nielsen (D0KT0R3N), Sashi Esport is a professionally run esports organization focused on structure, discipline, and longterm competitive growth. Our Counter-Strike team is built on strong communication, tactical preparation, and a commitment to high-level performance.
+        <p>Founded in 2022 and owned by Claus Nielsen (D0KT0R3N), Sashi Esport is a professionally run esports organization focused on structure, discipline, and longterm competitive growth. Our Counter-Strike team is built on strong communication, tactical preparation, and a commitment to high-level performance.
 Supported by dedicated management and coaching staff, we provide a stable environment where players can develop and compete internationally.</p>
         <div class="bulletPoints">
           <div class="bullet">
