@@ -124,6 +124,7 @@ const latestWins = computed(() =>
     align-items: center;
     transition: background-color 0.2s;
     backdrop-filter: blur(4px);
+    min-height: 4rem;
 }
 
 .items:hover {

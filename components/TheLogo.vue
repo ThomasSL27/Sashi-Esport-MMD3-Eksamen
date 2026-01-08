@@ -28,7 +28,7 @@
 
 <style scoped>
 /* ============================================
-   SMOKE EFFECT
+   SMOKE EFFECT PÅ LOGO
    ============================================ */
 .smoke {
   position: absolute;
@@ -86,13 +86,16 @@ article {
 }
 
 /* ============================================
-   ANIMATIONS
+   ANIMATIONS AF ARROW 
    ============================================ */
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
+/* ============================================
+      ANIMATIONS AF LOGO SMOKE
+   ============================================ */
 
 @keyframes pulse {
   0%, 100% {

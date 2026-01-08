@@ -17,15 +17,17 @@
         </div>
     </div>
     <div id="column2">
-        <p>Quick Links</p>
-        <NuxtLink to="/">Team</NuxtLink>
+        <p><span>Quick Links</span></p>
+        <NuxtLink to="/team">Team</NuxtLink>
         <NuxtLink to="/sashiproleague">Sashi Pro League</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
         <NuxtLink to="/contact">Contact us</NuxtLink>
     </div>
     <div id="column3">
-        <p>Contact</p>
-        <p>Email: <a href="mailto:email@email.com">email@email.com</a></p>
+        <p><span>Contact Info</span></p>
+        <p>Klostergade 2A 4200, Slagelse</p>
+        <p><a href="mailto:email@email.com">SashiEsport@gmail.com</a></p>
+        <p>Cvr: 36242132</p>
     </div>
 </footer>
 </template>
@@ -56,7 +58,6 @@
 #column2 a {
   width: max-content;
 }
-
 a:hover{
     color: red;
 }
@@ -82,6 +83,9 @@ footer {
   a{
     color: white;
     text-decoration: none;
+  }
+  p{
+    margin: 0.5rem 0;
   }
 }
 

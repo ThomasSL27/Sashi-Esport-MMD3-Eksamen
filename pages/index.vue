@@ -77,7 +77,7 @@ useHead({
   background-color: rgb(55, 55, 55);
   padding: 0.5rem 1rem;
   margin-top: 1rem;
-  width: 10%;
+  width: fit-content;
 }
 .results{
   display: flex;

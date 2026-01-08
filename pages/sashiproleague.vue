@@ -92,7 +92,7 @@ useHead({
           Join the Sashi Pro League today!
         </h3>
         <a href="https://faceit.com/en/inv/Qc4Kay8" target="_blank" rel="noopener noreferrer">
-          <button name="ProLeagueJoinBtn">Join now!</button>
+          <button>Join now!</button>
         </a>
       </div>
     </section>
@@ -118,6 +118,9 @@ useHead({
     background-color: red;
     cursor: pointer;
     border-radius: 10px;
+  }
+  .joinNow button:hover{
+    background-color: darkred;
   }
   .joinLeague{
     padding: 3rem 1rem 4rem;
