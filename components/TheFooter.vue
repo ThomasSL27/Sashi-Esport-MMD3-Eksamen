@@ -7,7 +7,7 @@
 <footer>
     <hr class="hr">
     <div id="column1">
-        <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Esport Logo">
+        <img src="@/assets/img/sashiEsportLogo.webp" alt="Sashi Esport Logo">
         <p>Professional Counter-Strike 2 team competing at the highest level of esports.</p>
         <div class="socials">
             <a href="https://x.com/SashiProLeague" target="_blank" aria-label="Follow us on X"><i class="fa-brands fa-x-twitter"></i></a>

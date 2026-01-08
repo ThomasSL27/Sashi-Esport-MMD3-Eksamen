@@ -48,7 +48,7 @@ Supported by dedicated management and coaching staff, we provide a stable enviro
     <hr class="hr">
     <section class="JnMeat">
       <div>
- <img src="@/assets/img/JNMeatLogo.png" alt="JN Meat Logo">
+ <img src="@/assets/img/JNMeatLogo.webp" alt="JN Meat Logo">
       </div>
       <div>
         <article>

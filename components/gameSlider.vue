@@ -38,7 +38,7 @@ const scoreForThem = (score) => score.split('-')[1]
             <!-- Teams -->
             <div class="teams">
               <div class="team">
-                <span class="logo"><img src="/assets/img/sashiEsportLogo.png" alt="sashi logo"></span>
+                <span class="logo"><img src="/assets/img/sashiEsportLogo.webp" alt="sashi logo"></span>
                 <span>Sashi Esport</span>
                 <strong>{{ scoreForUs(match.score) }}</strong>
               </div>
