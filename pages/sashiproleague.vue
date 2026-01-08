@@ -92,7 +92,7 @@ useHead({
           Join the Sashi Pro League today!
         </h3>
         <a href="https://faceit.com/en/inv/Qc4Kay8" target="_blank" rel="noopener noreferrer">
-          <button>Play now!</button>
+          <button>Join now!</button>
         </a>
       </div>
     </section>
@@ -165,12 +165,12 @@ useHead({
     width: 56px;
     height: 56px;
     border-radius: 1.1rem;
-    background: rgba(220, 38, 38, 0.16);
-    border: 1px solid rgba(239, 68, 68, 0.6);
+    background: rgba(255, 0, 0, 0.407);
+    border: 1px solid rgba(255, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #f97373;
+    color: red;
     margin-bottom: 0.25rem;
   }
 

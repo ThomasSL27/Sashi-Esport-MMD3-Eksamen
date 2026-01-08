@@ -124,20 +124,19 @@ const toggleFlip = (id) => {
   display: block;
 }
 
-/* Yellow border behind image */
+/* red border behind image */
 .img-hover-wrap::before {
   content: "";
   position: absolute;
   top: -8px;
   right: -8px;
-  width: calc(100% + 8px);
-  height: calc(100% + 8px);
+  width: calc(90%);
+  height: calc(90%);
   border-top: 15px solid red;
   border-right: 15px solid red;
   z-index: 3;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  transform: translate(10px, 10px);
+  transform: translate(20px, -20px);
 }
 
 .player-card:hover .img-hover-wrap::before {
@@ -145,26 +144,22 @@ const toggleFlip = (id) => {
   transform: translate(0, 0);
 }
 
-/* 6. TEXT THAT APPEARS ON HOVER */
+/* 6. Hover text */
 .hover-text {
   position: absolute;
-  top: -30px; /* sits above the image */
-  left: 50%;
-  transform: translateX(-50%) translateY(5px);
+  top: -32px; /* sits above the image */
+  right: 50px;
   background: red;
   color: white;
   padding: 4px 12px;
   font-size: 0.75rem;
   font-weight: 700;
-  border-radius: 2px;
   opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
   pointer-events: none;
 }
 
 .player-card:hover .hover-text {
   opacity: 1;
-  transform: translateX(-50%) translateY(0);
 }
 
 /* 7. CONTENT STYLES */
