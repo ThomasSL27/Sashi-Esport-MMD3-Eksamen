@@ -9,10 +9,10 @@
         <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Esport Logo">
         <p>Professional Counter-Strike 2 team competing at the highest level of esports.</p>
         <div class="socials">
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://x.com/SashiProLeague" target="_blank" aria-label="Follow us on X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/@sashiesport" target="_blank" aria-label="Follow us on Youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/sashi_esport/" target="_blank" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitch.tv/d0kt0r3n" target="_blank" aria-label="Follow us on Twitch"><i class="fa-brands fa-twitch"></i></a>
         </div>
     </div>
     <div id="column2">

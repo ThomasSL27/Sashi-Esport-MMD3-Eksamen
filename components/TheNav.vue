@@ -13,13 +13,13 @@ watch(isOpen, (open) => {
 <template>
   <nav>
     <div class="navlogo">
-      <NuxtLink to="/">
-        <img src="@/assets/img/sashiEsportLogo.png" alt="" id="sashiLogo">
+      <NuxtLink to="/" aria-label="Back to Home Page">
+        <img src="@/assets/img/sashiEsportLogo.png" alt="Sashi Logo - Back to Home Page" id="sashiLogo">
       </NuxtLink>
     </div>
 
     <!-- BURGER -->
-    <button class="burger" @click="isOpen = !isOpen">
+    <button aria-label="Open Menu" class="burger" @click="isOpen = !isOpen">
       <span :class="{ open: isOpen }"></span>
       <span :class="{ open: isOpen }"></span>
       <span :class="{ open: isOpen }"></span>

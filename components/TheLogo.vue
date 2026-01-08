@@ -10,7 +10,7 @@
         <h1>SASHI <span>ESPORT</span></h1>
         <h2>Professional Counter-Strike 2 Team</h2>
 
-        <a href="#teamIntro" class="arrowLink"><i class="fa-solid fa-arrow-down"></i></a>
+        <a href="#teamIntro" class="arrowLink" aria-label="Press Arrow for scroll"><i class="fa-solid fa-arrow-down"></i></a>
       </article>
     </section>
 </template>

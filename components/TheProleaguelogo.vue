@@ -10,7 +10,7 @@
         <h1>SASHI <span>PRO LEAGUE</span></h1>
         <h2>Counter-Strike 2 League</h2>
 
-        <a href="#teamIntro" class="arrowLink"><i class="fa-solid fa-arrow-down"></i></a>
+        <a href="#teamIntro" class="arrowLink" aria-label="Press arrow for scroll"><i class="fa-solid fa-arrow-down"></i></a>
       </article>
     </section>
 </template>

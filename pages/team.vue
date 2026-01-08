@@ -19,7 +19,7 @@
         <hr class="hr">
 <section class="voiceCommsSection">
   <div class="video">
-<iframe width="800" height="450" src="https://www.youtube.com/embed/zRUhOwvVBvo?si=fPhgpOBNWgo2uOpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube-nocookie.com/embed/zRUhOwvVBvo?si=fPhgpOBNWgo2uOpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
   <div class="white-box">
     <h2>Inside the server: <span>Team Voice Comms</span></h2>
