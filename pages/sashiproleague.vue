@@ -92,7 +92,7 @@ useHead({
           Join the Sashi Pro League today!
         </h3>
         <a href="https://faceit.com/en/inv/Qc4Kay8" target="_blank" rel="noopener noreferrer">
-          <button>Play now!</button>
+          <button>Join now!</button>
         </a>
       </div>
     </section>
