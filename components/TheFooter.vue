@@ -20,7 +20,7 @@
         <p>Quick Links</p>
         <NuxtLink to="/">Team</NuxtLink>
         <NuxtLink to="/results">Results</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/sashiproleague">Sashi Pro League</NuxtLink>
         <NuxtLink to="/contact">Contact us</NuxtLink>
     </div>
     <div id="column3">
