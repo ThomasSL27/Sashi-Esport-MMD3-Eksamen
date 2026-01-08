@@ -42,7 +42,7 @@ Supported by dedicated management and coaching staff, we provide a stable enviro
         </div>
       </article>
       <article class="aboutSashiImg" data-aos="fade-left">
-        <img src="@/assets/img/SashiHoldingTrophy.webp" alt="Sashi Esport holding trophy">
+    <img src="@/assets/img/SashiHoldingTrophy.webp" alt="Sashi Esport holding trophy">
       </article>
     </section>
     <hr class="hr">
