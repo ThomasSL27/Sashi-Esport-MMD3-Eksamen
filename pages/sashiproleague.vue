@@ -202,7 +202,10 @@ useHead({
     font-size: 0.95rem;
     line-height: 1.6;
   }
-
+    .requirements{
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
 img{
   width: 40rem;
 }
@@ -299,8 +302,5 @@ iframe{
 .highlights article{
   padding: 0;
 }
-    .requirements{
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
 }
 </style>
